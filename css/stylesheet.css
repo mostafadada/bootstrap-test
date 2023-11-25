@@ -1,0 +1,256 @@
+
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ebedf1 ;
+    color: #f31313 !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #5f0404 !important;
+}
+a:hover{
+    color: rgb(14, 33, 36) !important;
+}
+
+ul{
+    list-style: none;
+}
+header{
+    height: 80px; }
+
+
+    .navbar-brand , .title{
+        background: -webkit-linear-gradient(90deg,#de0700,#fc00ff);
+        font-size: 22px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.4s;
+    }
+    .navbar-brand:hover{
+        text-shadow: 5px 5px 20px rgb(19, 111, 136), -5px -5px 20px  rgb(19, 111, 136);
+    }
+    .nav-link:hover{
+        font-weight: bolder;
+        text-shadow: 1px 1px 10px  rgb(230, 174, 225), -1px -1px 10px rgb(230, 174, 225);
+    }
+    .nav-link:hover::first-letter{
+        font-size: larger;
+        color: rgb(148, 20, 120);
+    }
+    
+    .dropdown-menu li a{
+        text-shadow: 1px 1px 0px rgb(7, 89, 136);
+    }
+    .navbtn:hover{
+        opacity: 0.7;
+    }
+
+    .carousel-inner h1{
+        text-shadow: 1px 1px 5px #096975;
+    }
+    .carousel-inner .carousel-caption{
+        background: rgba(86, 184, 190, 0.5);
+        border-radius: 10px;
+    }
+     .aside-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .aside-icon a i{
+        text-align: center;
+        font-size: 60px;
+        line-height: 80px; }
+
+
+        .btntranslate{
+            position: relative;
+           
+        }
+        .btntranslate::before{
+        position: absolute;
+        content: "";
+        border: 15px groove transparent transparent lightblue transparent;
+        
+        top: 0px;
+        left: 0px;
+        display: none;
+        }
+        .btntranslate::after{
+        position: absolute;
+        content: "";
+        height: 50px;
+        width: 100px;
+        background-color: rgb(215, 240, 248);
+        top: 40px;
+        left: 70px;
+        border-radius: 0px 15px 15px;
+        display: none;
+        }
+        .btntranslate:active::before,
+        .btn:hover::before{
+            display: block;
+        
+        }
+        .btntranslate:hover::after{
+            content: "Copy to Clipboard";
+            color: #022535;
+            display: block;
+        }
+        .btntranslate:active::after{
+            content: "copied";
+            color: #022535;
+            display: block;
+            height: 25px;
+        } 
+
+
+        .fixed-img{
+            background-attachment: fixed;
+            background-size: cover;
+            height: 300px;
+            }
+            .fixed-image1{
+            background-image: url(../images/freedom.jpg);
+            }
+            .fixed-image2{
+            background-image: url(../images/freedom\ 2.jpg);
+            }
+            .card-img-top{
+                height: 380px;
+            }  
+        
+
+            .aside-icon {
+                width: 80px;
+                height: 80px;
+            }
+            .aside-icon a i{
+                text-align: center;
+                font-size: 60px;
+                line-height: 80px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.postcard {
+    height: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    box-shadow: -5px 5px 20px 10px rgb(201, 198, 241);
+  }
+  .postcard.dark {
+    background-color: #18151f;
+  }
+  .postcard.light {
+    background-color: #e1e5ea;
+  }
+  .postcard .t-dark {
+    color: #18151f;
+  }
+  .postcard a {
+    color: inherit;
+  }
+  .postcard h1, .postcard .h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .postcard .small {
+    font-size: 80%;
+  }
+  .postcard .postcard__title {
+    font-size: 1.75rem;
+  }
+  .postcard .postcard__img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .postcard .postcard__img_link {
+    display: contents;
+  }
+  .postcard .postcard__bar {
+    width: 50px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #424242;
+    transition: width 0.2s ease;
+  }
+  .postcard .postcard__text {
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .postcard .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+  }
+  .postcard .postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .postcard .postcard__tagbox .tag__item {
+    display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 0 5px 5px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: background-color 0.5s;
+  }
+  .postcard .postcard__tagbox .tag__item:hover {
+    background: rgba(83, 83, 83, 0.8);
+  }
+  .postcard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #d11818, transparent 50%);
+    opacity: 1;
+    border-radius: 10px;
+  }
+  .postcard:hover .postcard__bar {
+    width: 100px; }
